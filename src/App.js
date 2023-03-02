@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Componants/Home';
+import DataProvider from './Context/DataProvider';
 
 function App() {
   return (
-    <div className="App">
-     <Home/>
-    </div>
+    <DataProvider>
+           <Home/>
+    </DataProvider>
   );
 }
 
